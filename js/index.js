@@ -1,13 +1,13 @@
 // Your code goes here
 
-// apply zoom on "mouseenter"
+// apply zoom on "mouseenter" x
 const busImage = document.querySelector(".intro")
 
 busImage.addEventListener("mouseenter", () => {
     busImage.style.transform = "scale(1.1)";
     busImage.style.transition = "all 0.3s" })
 
-// apply zoom reset on "mouseleave"
+// apply zoom reset on "mouseleave" x
 
     busImage.addEventListener("mouseleave", () => {
         busImage.style.transform = "scale(1)";
@@ -44,4 +44,12 @@ busImage.addEventListener("mouseenter", () => {
         destination.style.transform = "scale(1)";
         })
 
-// change body color on scroll
+
+
+// changing all pics on load
+
+const busPicChange = document.querySelector('.intro img')
+
+busPicChange.addEventListener('load', () => {
+    busPicChange.src = "https://i0.wp.com/tvrev.com/wp-content/uploads/2018/09/Fortnite-Battle-Bus-1920x1080.jpg?fit=1920%2C1080";
+})
