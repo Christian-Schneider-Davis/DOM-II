@@ -46,10 +46,28 @@ busImage.addEventListener("mouseenter", () => {
 
 
 
-// changing all pics on load
+// changing all pics on event
 
 const busPicChange = document.querySelector('.intro img')
 
-busPicChange.addEventListener('load', () => {
+busPicChange.addEventListener('click', () => {
     busPicChange.src = "https://i0.wp.com/tvrev.com/wp-content/uploads/2018/09/Fortnite-Battle-Bus-1920x1080.jpg?fit=1920%2C1080";
+})
+
+const letsGoPic = document.querySelector('.img-content img')
+
+letsGoPic.addEventListener('click', () => {
+    letsGoPic.src = "https://i.ytimg.com/vi/a_Etru2zQk8/maxresdefault.jpg";
+})
+
+const adventurePic = document.querySelector('.content-section-inverse-content img')
+
+adventurePic.addEventListener('click', () => {
+    adventurePic.src = "https://assets.gamepur.com/wp-content/uploads/2020/12/02021155/Fortnite-Battle-Pass-Skins.jpg";
+})
+
+const destinationPic = document.querySelector('.content-destination img')
+
+destinationPic.addEventListener('click', () => {
+    destinationPic.src = "https://attackofthefanboy.com/wp-content/uploads/2019/08/battle-pass-menu-fortnite.jpg";
 })
