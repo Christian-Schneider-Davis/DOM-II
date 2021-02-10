@@ -1,11 +1,15 @@
 // Your code goes here
+
+// apply zoom on "mouseenter"
 const busImage = document.querySelector(".intro")
 
 busImage.addEventListener("mouseenter", () => {
     busImage.style.transform = "scale(1.1)";
     busImage.style.transition = "all 0.3s" })
 
-    busImage.addEventListener("click", () => {
+// apply zoom reset on "mouseleave"
+
+    busImage.addEventListener("mouseleave", () => {
         busImage.style.transform = "scale(1)";
         })
 
@@ -16,7 +20,7 @@ busImage.addEventListener("mouseenter", () => {
     letsGo.style.transform = "scale(1.1)";
     letsGo.style.transition = "all 0.3s" })
 
-    letsGo.addEventListener("click", () => {
+    letsGo.addEventListener("mouseleave", () => {
         letsGo.style.transform = "scale(1)";
         })
 
@@ -26,7 +30,7 @@ busImage.addEventListener("mouseenter", () => {
             adventure.style.transform = "scale(1.1)";
             adventure.style.transition = "all 0.3s" })
 
-            adventure.addEventListener("click", () => {
+            adventure.addEventListener("mouseleave", () => {
                 adventure.style.transform = "scale(1)";
         })
 
@@ -36,6 +40,8 @@ busImage.addEventListener("mouseenter", () => {
             destination.style.transform = "scale(1.1)";
     destination.style.transition = "all 0.3s" })
 
-    destination.addEventListener("click", () => {
+    destination.addEventListener("mouseleave", () => {
         destination.style.transform = "scale(1)";
         })
+
+// change body color on scroll
